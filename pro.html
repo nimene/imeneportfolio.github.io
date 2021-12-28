@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta keywords="htmls , learn , teach"/>
+	<link rel="stylesheet" type="text/css" href="pro.css">
+    
+	<title> My Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--hero -->
+    <section id="hero">
+      <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        
+      </div>
+        <div class="containner">
+            <div class="nav">
+                <a href="essay.html"><span>I</span>MENE <span>B</span>OUTELDJA</a>
+            </div>
+            <div class="hero">
+            
+            <h1>“If you do good work for good clients, 
+              it will lead to other good work for other good clients. 
+              <br>
+              <br>
+              If you do bad work for bad clients,
+              it will lead to other bad work for other bad clients.” 
+              <br>
+              <br>– Michael Bierut – </h1>
+        </div>
+        <img src="./design.png">
+
+
+
+        </div>
+       
+    </section>
+    <!--end hero  -->
+<!--project -->
+<div class="smooth-scroll-wrapper">
+<section id="projects">
+    <div class="container">
+     
+      <div class="all-items">
+        <div class="item">
+          <div class="left">
+            <div class="img">
+              <img src="./logoss.png" alt="">
+            </div>
+          </div>
+          <div class="right">
+            <h2 class="project-title">Logofolio</h2>
+            <h3 class="project-sub-title">Some examples of logos.</h3>
+            <p class="project-desc">I wanted to share with you some models of logos for 2021. Each of these logos reminds me of a story or experience. Here
+              at making each logo, i tried to start with my pen nd my little sketchbook to get the best idea of the logo, It is hardly possible to create a winning design from the first attempt, 
+              but always i try to help myself by asking the right questions to customers and help them convey their vision in the most precise terms.
+              .</p>
+           
+             
+
+          </div>
+        </div>
+        <div class="item">
+          <div class="left">
+            <div class="img">
+              <img src="./brand.png" alt="">
+            </div>
+          </div>
+          <div class="right">
+            <h2 class="project-title">Brand Identity
+            </h2>
+            <h3 class="project-sub-title">the visible elements of a brand.
+            </h3>
+            <p class="project-desc">Brand identity is the visible elements of a brand, such as color, design, and logo, that identify and distinguish the brand in consumers' minds.
+              building a positive brand image can bring in consistent sales and make product roll-outs more successful
+              .</p>
+          
+              
+              
+          </div>
+        </div>
+        <div class="item">
+          <div class="left">
+            <div class="img">
+              <img src="./website.png" alt="">
+            </div>
+          </div>
+          <div class="right">
+            <h2 class="project-title">Web DEV</h2>
+            <h3 class="project-sub-title">web design and development </h3>
+            <p class="project-desc">Web design is important because it impacts how your audience perceives your brand. 
+              The impression you make on them can either get them to remain on your page and learn about your business or leave your page and turn to a competitor. 
+              A good web design helps you keep your leads on your page.</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="left">
+              <div class="img">
+                <img src="./illust.png" alt="">
+              </div>
+            </div>
+            <div class="right">
+              <h2 class="project-title">Illustration</h2>
+              <h3 class="project-sub-title">Art Illustrator.</h3>
+              <p class="project-desc">An illustration is a visualization or a depiction made by an artist. An art illustrator tells a story through their drawings.</p>
+              
+            
+  
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  </div>
+  <script>
+    const body = document.body,
+        scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
+        height = scrollWrap.getBoundingClientRect().height - 2,
+        speed = 0.04;
+
+    var offset = 0;
+
+    body.style.height = Math.floor(height) + "px";
+
+    function smoothScroll() {
+        offset += (window.pageYOffset - offset) * speed;
+
+        var scroll = "translateY(-" + offset + "px) translateZ(0)";
+        scrollWrap.style.transform = scroll;
+
+        callScroll = requestAnimationFrame(smoothScroll);
+    }
+
+    smoothScroll();
+    </script>
+  <!--end projects -->
+  </body>
+  </html>
